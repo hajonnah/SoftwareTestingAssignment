@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/hajonnah/SoftwareTestingAssignment/badge.svg?branch=main)](https://coveralls.io/github/hajonnah/SoftwareTestingAssignment?branch=main)
+
 # SoftwareTestingAssignment
 
 ## Source Code
