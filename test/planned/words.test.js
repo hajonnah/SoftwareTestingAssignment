@@ -90,7 +90,11 @@ describe('words.js - Unit tests', () => {
       expect(words('  hello world  '))
         .to.deep.equal(['hello', 'world'])
     })
+  
+  })
 
+  describe('Custom pattern', () => {
+  
     // Simplified patterns to just be single words and not RegExp
     it('returns matched words when pattern finds matches', () => {
       expect(words('hello', 'hello'))
@@ -101,6 +105,7 @@ describe('words.js - Unit tests', () => {
       expect(words('hello', 'world'))
         .to.deep.equal([])
     })
+  
   })
 
 })
