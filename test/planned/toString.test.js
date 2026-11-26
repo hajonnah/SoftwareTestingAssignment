@@ -16,6 +16,7 @@ describe("toString.js - Unit tests", () => {
       expect(toString(-42)).to.equal('-42')
       expect(toString(3.14)).to.equal('3.14')
       expect(toString(0)).to.equal('0')
+      expect(toString(-0)).to.equal('-0')
     })
 
     it('should convert boolean values to strings', () => {
