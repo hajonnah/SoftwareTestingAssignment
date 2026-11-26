@@ -91,6 +91,16 @@ describe('words.js - Unit tests', () => {
         .to.deep.equal(['hello', 'world'])
     })
 
+    // Simplified patterns to just be single words and not RegExp
+    it('returns matched words when pattern finds matches', () => {
+      expect(words('hello', 'hello'))
+        .to.deep.equal(['hello'])
+    })
+
+    it('returns an empty array when pattern finds no matches', () => {
+      expect(words('hello', 'world'))
+        .to.deep.equal([])
+    })
   })
 
 })
